@@ -1,0 +1,34 @@
+#과제
+- html 
+- head : 머리말
+- link
+- meta : 정보에 대한 정보를 알려줌
+- title : 문서 제목
+- style
+- script
+- body : 본문
+- nav 
+- hr : 단락 구분
+- noscript
+- div : HTML 문서 영역이나 섹션의 분할을 정의한다
+- h1~6 : 제목
+- a : 링크 연결. inline요소
+- span : 줄바꿈이 안되고, 폭 , 높이 적용도 안됨
+- map
+- img : 이미지 가져오기, inline요소
+- section
+- header
+- article
+- form : 입력을 받음. 게시판
+- input
+- footer
+- ul : 앞에 기호가 붙는다.
+- li : ol과 ul의 자식으로 li만 올 수 있다
+- menu
+- p : 문단
+- i
+- aside
+- address
+- br : 줄바꿈
+- strong : 	글짜를 굵게 표현한다.
+
