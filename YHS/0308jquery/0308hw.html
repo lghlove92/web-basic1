@@ -6,43 +6,58 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <style>
-.bea{
-background-color:lightblue;
-color: black; 
-text-decoration: none;
-border: 0;
-outline: 0;
-height:70px;
-width: 100px;
-text-align:center;
-}
+    .bea{
+        background-color:lightblue;
+        color: black; 
+        text-decoration: none;
+        border: 0;
+        outline: 0;
+        height:70px;
+        width: 100px;
+        text-align:center;
+    }
+
+    .uti { 
+        text-align: center;
+    }
+    .uti img {
+        width: 400px;
+    }
+
+
 </style>
 
 </head>
 
 <body>
-<img class="content1" src="a1.jpg"></img>
-<img class="content2" src="a2.jpg"></img>
-<img class="content3" src="a3.jpg"></img>
-<img class="content4" src="a4.jpg"></img>
+    <div class="uti">
+        <img class="content1" src="a1.jpg"></img>
+        <img class="content2" src="a2.jpg"></img>
+        <img class="content3" src="a3.jpg"></img>
+        <img class="content4" src="a4.jpg"></img>
+        <img class="content5" src="a5.png"></img>
+    </div>
 <br>
+<div style="text-align: center">
 <input type="button" value="흰" class="btn1 bea">
 <input type="button" value="갈" class="btn2 bea">
 <input type="button" value="진갈" class="btn3 bea">
 <input type="button" value="검정" class="btn4 bea">
+</div>
 
 <script type="text/javascript">
 $(".content1").hide();
 $(".content2").hide();
 $(".content3").hide();
 $(".content4").hide();
-
+$(".content5").show();
 
 $(".btn1").click(function(){
-$(".content1").show();
-$(".content2").hide();
-$(".content3").hide();
-$(".content4").hide();
+    $(".content1").show();
+    $(".content2").hide();
+    $(".content3").hide();
+    $(".content4").hide();
+    $(".content5").hide();
 });
 
 $(".btn2").click(function(){
@@ -50,6 +65,7 @@ $(".content1").hide();
 $(".content2").show();
 $(".content3").hide();
 $(".content4").hide();
+$(".content5").hide();
 });
 
 $(".btn3").click(function(){
@@ -57,6 +73,7 @@ $(".content1").hide();
 $(".content2").hide();
 $(".content3").show();
 $(".content4").hide();
+$(".content5").hide();
 });
 
 $(".btn4").click(function(){
@@ -64,6 +81,7 @@ $(".content1").hide();
 $(".content2").hide();
 $(".content3").hide();
 $(".content4").show();
+$(".content5").hide();
 });
 
 </script>
