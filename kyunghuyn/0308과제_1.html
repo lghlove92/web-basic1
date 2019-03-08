@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Title</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            .container {
+                width: 500px;
+                height: 200px;
+            }
+            img {
+                display: none;
+                width: 500px;
+                height: 200px;
+            }
+            button {
+                color: #fff;
+                width: 80px;
+                line-height: 80px;
+                background-color: cornflowerblue;
+                border-radius: 50%;
+                border: 0;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container" style="border:1px solid #333333">
+            <img class="test_image1" src="image/skt.jpg">
+            <img class="test_image2" src="image/kt.jpg">
+            <img class="test_image3" src="image/lgu.jpg">
+            <img class="test_image4" src="image/t1.png">
+        </div>
+        <!--
+        <a href="#" class="btn1" >skt</a>
+        <button type="button" class="btn1 btn-info">skt</button>
+        <a href="#" class="btn2" >kt</a>
+        <button type="button" class="btn2 btn-info">kt</button>
+        <a href="#" class="btn3" >lgu</a>
+        <button type="button" class="btn3 btn-info">lgu</button>
+        <a href="#" class="btn4" >t1</a>
+        <button type="button" class="btn4 btn-info">t1</button>
+        <br>
+        -->
+        <div class="btn-group">
+            <button type="button" class="btn1 btn-primary">SKT</button>
+            <button type="button" class="btn2 btn-primary">KT</button>
+            <button type="button" class="btn3 btn-primary">LGU</button>
+            <button type="button" class="btn4 btn-primary">SKT T1</button>
+        </div>
+    
+    
+        <script type="text/javascript">
+            $( ".btn1" ).click(function(e) {
+                e.preventDefault();
+                $(".test_image1").show();
+                $(".test_image2").hide();
+                $(".test_image3").hide();
+                $(".test_image4").hide();
+                /* 
+                if($(".test_image:visible").length){
+                    $(".test_image:visible").hide();
+                } else {
+                    $(".test_image").show();
+                }
+                */
+            });
+            $( ".btn2" ).click(function(e) {
+                e.preventDefault();
+                $(".test_image2").show();
+                $(".test_image1").hide();
+                $(".test_image3").hide();
+                $(".test_image4").hide();
+                /* 
+                if($(".test_image:visible").length){
+                    $(".test_image:visible").hide();
+                } else {
+                    $(".test_image").show();
+                }
+                */
+            });
+            $( ".btn3" ).click(function(e) {
+                e.preventDefault();
+                $(".test_image3").show();
+                $(".test_image1").hide();
+                $(".test_image2").hide();
+                $(".test_image4").hide();
+                /* 
+                if($(".test_image:visible").length){
+                    $(".test_image:visible").hide();
+                } else {
+                    $(".test_image").show();
+                }
+                */
+            });
+            $( ".btn4" ).click(function(e) {
+                e.preventDefault();
+                $(".test_image4").show();
+                $(".test_image1").hide();
+                $(".test_image2").hide();
+                $(".test_image3").hide();
+                /* 
+                if($(".test_image:visible").length){
+                    $(".test_image:visible").hide();
+                } else {
+                    $(".test_image").show();
+                }
+                */
+            });
+        </script>
+    </body>
+</html>

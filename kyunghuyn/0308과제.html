@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Title</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style type="text/css">
+            .css_test {
+                text-align : center;
+            }
+            .css_test img {
+                width: 500px;
+                height: 250px;
+            }
+        </style>
+    </head>
+    <body>
+            <div class="css_test">
+                    <img src="image/skt.jpg" /><br>
+                    아래 버튼을 눌러보세요.<br>
+                    <button type="button" onclick="j_test('image/logo_coupang_w350.png')">사진 1</button>
+                    <button type="button" onclick="j_test('http://s3.ap-northeast-2.amazonaws.com/cloimage/home/rails/clo/public/ckeditor_assets/pictures/1805/content_1.jpg')">사진 2</button>
+                    <button type="button" onclick="j_test('image/skt.jpg')">사진 3</button>
+                    <button type="button" onclick="j_test('image/kt.jpg')">사진 4</button>
+                    <button type="button" onclick="j_test('image/lgu.jpg')">사진 5</button>
+                </div>
+    
+                <script type="text/javascript">
+                    function j_test(src){
+                        $('.css_test img').attr('src', src); // 클릭한 버튼의 이미지 보여주기
+                    }
+                </script>
+    </body>
+</html>

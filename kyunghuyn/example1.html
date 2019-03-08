@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Title</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            img {
+                display: none;
+                width: 500px;
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <img class="test_image1" src="image/skt.jpg">
+        <img class="test_image2" src="image/kt.jpg">
+        <img class="test_image3" src="image/lgu.jpg">
+        <img class="test_image4" src="image/t1.png">
+        <a href="#" class="btn1" >skt</a>
+        <a href="#" class="btn2" >kt</a>
+        <a href="#" class="btn3" >lgu</a>
+        <a href="#" class="btn4" >t1</a>
+    
+    
+        <script type="text/javascript">
+            $( ".btn1" ).click(function(e) {
+                e.preventDefault();
+                $(".test_image1").show();
+                $(".test_image2").hide();
+                $(".test_image3").hide();
+                $(".test_image4").hide();
+                /* 
+                if($(".test_image:visible").length){
+                    $(".test_image:visible").hide();
+                } else {
+                    $(".test_image").show();
+                }
+                */
+            });
+            $( ".btn2" ).click(function(e) {
+                e.preventDefault();
+                $(".test_image2").show();
+                $(".test_image1").hide();
+                $(".test_image3").hide();
+                $(".test_image4").hide();
+                /* 
+                if($(".test_image:visible").length){
+                    $(".test_image:visible").hide();
+                } else {
+                    $(".test_image").show();
+                }
+                */
+            });
+            $( ".btn3" ).click(function(e) {
+                e.preventDefault();
+                $(".test_image3").show();
+                $(".test_image1").hide();
+                $(".test_image2").hide();
+                $(".test_image4").hide();
+                /* 
+                if($(".test_image:visible").length){
+                    $(".test_image:visible").hide();
+                } else {
+                    $(".test_image").show();
+                }
+                */
+            });
+            $( ".btn4" ).click(function(e) {
+                e.preventDefault();
+                $(".test_image4").show();
+                $(".test_image1").hide();
+                $(".test_image2").hide();
+                $(".test_image3").hide();
+                /* 
+                if($(".test_image:visible").length){
+                    $(".test_image:visible").hide();
+                } else {
+                    $(".test_image").show();
+                }
+                */
+            });
+        </script>
+    </body>
+</html>
