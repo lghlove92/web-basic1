@@ -13,36 +13,38 @@ console.log("2. 화씨->섭씨 계산기입니다.");
 console.log("3. 계산기를 종료합니다");
 x = parseInt(prompt("메뉴를 입력해주세요.", "1"));
 
-if (x==1, Far != undefined){
-console.log(Far);
-Far = null;
-}
-
-else if (x==2, Cal != undefined){
-console.log(Cal);
+if (x>3){
+console.log("메뉴 안에서 골라주세요");
 Cal = null;
+Far = null;
 }
 
 else if (x==3){
 break;
 }
 
-else if (x>3){
-console.log("메뉴 안에서 골라주세요");
+else if (Far != undefined){
+console.log("이전에 변환한 온도는", Far);
+Far = null;
+}
+
+else if (Cal != undefined){
+console.log("이전에 변환한 온도는", Cal);
+Cal = null;
 }
 
 else {
 if (x===1){
 y = parseFloat(prompt("온도를 입력해주세요."));
 var Far = y*1.8+32;
-console.log(Far);
+console.log("화씨 온도는", Far);
 
 }
 
 else if (x===2){
 y = parseFloat(prompt("온도를 입력해주세요."));
 var Cal = (y-32)/1.8;
-console.log(Cal);
+console.log("섭씨 온도는", Cal);
 
 }
 
