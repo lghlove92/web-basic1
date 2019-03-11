@@ -1,0 +1,50 @@
+﻿<! DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>섭씨화씨 계산기</title>
+
+<head>
+
+<style>
+.sty{
+background-color: yellow;
+height:70px;
+width: 100px;
+text-decoration: none;
+border: 0;
+outline: 1;
+
+}
+</style>
+
+
+</head>
+
+<body>
+
+<input onclick="CFCalcu1()" id="btn1" type="button" value="섭씨->화씨"; class="sty">
+<input onclick="CFCalcu2()" id="btn2" type="button" value="화씨->섭씨"; class="sty">
+<div id="result"></div>
+
+
+<script type="text/javascript">
+
+
+function CFCalcu1(){
+x = parseFloat(prompt("섭씨를 입력하세요"));
+Fah = x*1.8+32;
+  document.getElementById("result").innerHTML = "화씨 온도는"+Fah+"입니다.";
+
+}
+
+function CFCalcu2(){
+y = parseFloat(prompt("화씨를 입력하세요"));
+Cal = (y-32)/1.8;
+  document.getElementById("result").innerHTML = "섭씨 온도는"+Cal+"입니다.";
+
+}
+</script>
+
+
+</body>
