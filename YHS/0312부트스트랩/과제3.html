@@ -1,0 +1,184 @@
+﻿<! DOCTYPE html>
+<title>0312 과제</title>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<style>
+    .header1{
+    
+    background-color: #343a40;
+    height: 60px;
+      
+    }
+    .header1 .nav {
+      float: left;
+    }
+    .header1 .form-inline {
+      float: right;
+    }
+    .nav-link.album:hover {
+      color: red !important;
+    }
+    .container {
+      clear: both;
+    }
+
+    .menu1{
+      color:black;
+      font-weight: bold;
+
+    }
+
+    </style>
+    
+    
+    <body>
+    
+    <div class="header1" role="alert" style="padding:8">
+      <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#" style="color:white; font-size: 130%">FDS</a>
+      </li>
+      <li class="nav-item" style="padding:4">
+        <a class="nav-link" href="과제1.html" style="color:white">Home</a>
+      </li>
+      <li class="nav-item" style="padding:4">
+        <a class="nav-link album" href="과제2.html" style="color:#757575">Album</a>
+      </li>
+    <li class="nav-item" style="padding:4">
+        <a class="nav-link album" href="과제3.html" style="color:#757575">Dash Board</a>
+      </li>
+    </ul>
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-2" style="background-color:burlywood; position: fixed">
+            
+              <ul class="nav flex-column"> 
+                  <li class="nav-item">
+                    <a class="nav-link active menu1" href="#">Dashboard</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menu1" href="#">Orders</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menu1" href="#">Products</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active menu1" href="#">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link menu1" href="#">Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu1" href="#">Integration</a>
+                      </li>
+                </ul>
+                <br>
+                <p style="color:gray">Saved Reports</p>
+              
+                <ul class="nav flex-column"> 
+                    <li class="nav-item">
+                      <a class="nav-link active menu1" href="#">Current month</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link menu1" href="#">Last quarter</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link menu1" href="#">Social engagement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu1" href="#">Year-end sale</a>
+                      </li>
+                  </ul>
+
+          </div>
+          <div class="col" style="position:relative; margin-left: 230px">
+            <h1 style="display: inline-block">Dashboard</h1>
+            <div class="btn-group" role="group" aria-label="Basic example" style="float: right; background-color: cornsilk; display: inline-block; margin-top: 10px">
+                <button type="button" class="btn btn-secondary">Left</button>
+                
+                <button type="button" class="btn btn-secondary">Right</button>
+              </div>
+            <hr>
+        <img src="dash.png"></img>
+
+        <br>
+        <h1>Section title</h1>
+        <hr>
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Header1</th>
+                <th scope="col">Header2</th>
+                <th scope="col">Header3</th>
+                <th scope="col">Header4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>1001</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>1002</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>1003</td>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+              <tr>
+                  <th scope="row">4</th>
+                  <td>1004</td>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>1005</td>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                  <tr>
+                      <th scope="row">6</th>
+                      <td>1006</td>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+            </tbody>
+          </table>
+          
+          </div>
+        </div>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
