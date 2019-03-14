@@ -1,0 +1,124 @@
+﻿<! DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<title>TD</title>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<style>
+
+.beau {
+    background-color: #678085;
+    border:0Px;
+    color:white;
+}
+
+ul {
+    /* padding: 0; */
+}
+
+</style>
+
+
+
+<script type="text/Javascript">
+
+// function enterkey() {
+//         if (window.event.keyCode == 13) {
+ 
+//             cat.click();
+//         }
+// }
+
+
+
+$(document).ready(function(){
+    $('#abcd').click(function(){
+        $('#todo-list').append('<li class="todo-item list-group-item">' + $('#input-text').val() + '<button id="testBtn">Click</button>'+ '</li>' )
+        $('.list-all').append('<li class="todo-item list-group-item">' + $('#input-text').val() + '<button id="testBtn">Click</button>'+ '</li>' )
+    });
+
+    $('.list-done').on('click', '#testBtn', function(){
+        $(this).parent().remove();
+    });
+    $('.list-all').on('click', '#testBtn', function(){
+        $(this).parent().remove();
+    });
+
+    $('#todo-list').on('click', '#testBtn', function(){
+        $(this).parent().remove();
+    });
+
+    $('#todo-list').on('click', '.todo-item', function(){
+        confirm("정말로 다하셨나요?")
+        $(this).clone().appendTo('.list-done');
+        $(this).remove();
+    });
+
+$("#input-text").keydown(function(e) {
+    if(e.keyCode === 13) {
+        $('#todo-list').append('<li class="todo-item list-group-item">' + $('#input-text').val() + '<button id="testBtn">Click</button>'+ '</li>' )
+        $('.list-all').append('<li class="todo-item list-group-item">' + $('#input-text').val() + '<button id="testBtn">Click</button>'+ '</li>' )
+    }
+
+
+})
+});
+
+
+
+</script>
+
+<head>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+        <div class="alert alert-info" role="alert">
+                <div style = "text-align: center">
+                        <h1>TO DO LIST</h1>
+                    <input type="text" id="input-text"> 
+                    <input type="button" value="입력" id="abcd" onkeyup="enterkey();" class="beau cat">
+                    </div>
+              </div>
+
+
+
+<br>
+
+<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+        <div class="mdl-tabs__tab-bar">
+            <a href="#starks-panel" class="mdl-tabs__tab is-active">해야 할 일</a>
+            <a href="#lannisters-panel" class="mdl-tabs__tab">끝낸 일</a>
+            <a href="#targaryens-panel" class="mdl-tabs__tab">ALL</a>
+        </div>
+      
+        <div class="mdl-tabs__panel is-active" id="starks-panel">
+          <ul style="list-style:none" id="todo-list" class="list-group">
+          </ul>
+        </div>
+        <div class="mdl-tabs__panel" id="lannisters-panel">
+          <ul style="list-style:none" class="list-done list-group">
+          </ul>
+        </div>
+        <div class="mdl-tabs__panel" id="targaryens-panel">
+          <ul style="list-style:none" class="list-all list-group">
+          </ul>
+        </div>
+      </div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
