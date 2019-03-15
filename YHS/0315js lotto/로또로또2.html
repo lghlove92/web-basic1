@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<title>로또번호</title>
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+
+<body> 
+
+<div id='console'> </div>
+<div id='nono'> </div>
+
+<button type="button" class="btn btn-outline-warning" id="log2" onclick="reset(); loto()">인생역전버튼</button>
+
+<script type="text/javascript">
+
+function prependZero(num, len) {
+    console.log(num, len)
+        while(num.toString().length < len) {
+            num = "0" + num;
+        }
+        return num;
+}
+
+
+function loto(){
+    var c = parseInt(prompt("게임횟수를 입력하세요"));
+    
+    for(j=0; j<c; j++){
+        var a = []
+
+        while(a.length<6){
+            var b = (Math.floor(Math.random()*45)+1);
+            if (a.indexOf(b)==-1) {
+                a.push(b)
+            }
+//         console.log(f)
+    
+        }
+
+        
+        var f = a.sort(function(x,y){return x-y});
+        
+        
+   f[0] = prependZero(f[0], 2)
+   f[1] = prependZero(f[1], 2)
+   f[2] = prependZero(f[2], 2)
+   f[3] = prependZero(f[3], 2)
+   f[4] = prependZero(f[4], 2)
+
+   
+   var d="<b>"+"#"+(j+1)+"</b>"+"&nbsp"+"&nbsp"+f[0]+"&nbsp"+f[1]+"&nbsp"+f[2]+"&nbsp"+f[3]+"&nbsp"+f[4]+"&nbsp"+"<div>" ;
+        var e= "지불 금액은 :  "+c*1000+"원입니다.";
+        console.log(f)
+        console.log(d)
+        console.log(e)
+
+
+        document.getElementById('console').innerHTML=document.getElementById('console').innerHTML+d;
+
+        document.getElementById('nono').innerHTML="<hr>"+e;
+
+    };
+
+}
+
+
+
+
+function reset(){
+
+    document.getElementById('console').innerHTML = [];
+    document.getElementById('nono').innerHTML = '';
+}
+
+
+
+    </script>
+
+      
+    
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
